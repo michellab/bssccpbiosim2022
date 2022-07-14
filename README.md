@@ -31,4 +31,4 @@ notebooks there. These training materials will teach you more about BioSimSpace,
 
 ### Part 2: Relative Binding Free Energies with BioSimSpace
 
-### Part 2: Absolute Binding Free Energies with BioSimSpace
+### Part 3: Absolute Binding Free Energies with BioSimSpace
