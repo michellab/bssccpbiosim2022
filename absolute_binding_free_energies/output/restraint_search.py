@@ -1,5 +1,6 @@
 # This script was used to generate the trajectory used for restraint selection.
 import os
+# Make GPU visible
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import BioSimSpace.Sandpit.Exscientia as BSS
 system = BSS.IO.readMolecules(["../input/complex/mif_mif180.prm7", "../input/complex/mif_mif180.rst7"])
