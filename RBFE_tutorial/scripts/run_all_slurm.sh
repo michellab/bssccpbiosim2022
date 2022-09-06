@@ -1,22 +1,18 @@
 #! /bin/bash 
 #
-#run all the lig prep, FEP prep, and the production runs
+# Run all the lig prep, FEP prep, and the production runs
 # Prior to this, the execution model should have been set up using the overall_network.ipynb
 # This should have also tested if all the required parts are installed.
 
 # TODO set the main directory filepath, make sure BSS branch and engines are sourced correctly
-# export MAINDIRECTORY="/export/users/anna/september_workshops/RBFE_tutorial" # Set file path for protein
-export MAINDIRECTORY="/home/anna/Documents/september_2022_workshops/bssccpbiosim2022/RBFE_tutorial"
+# export MAINDIRECTORY="RBFE_tutorial" # Set file path
 # module load cuda/11.6
 # module load amber/22
 # module load gromacs/20.4
-# somd="/export/users/anna/sire.app/bin/somd-freenrg"
-# export BSS="/export/users/anna/anaconda3/bin/activate biosimspace-dev"
-export BSS="/home/anna/anaconda3/bin/activate biosimspace-dev" 
-source $BSS
+# somd="/export/users/XXX/sire.app/bin/somd-freenrg"
+# export BSS="/export/users/XXX/anaconda3/bin/activate biosimspace-dev"
 
-# export BSS="/home/anna/anaconda3/bin/activate biosimspace-dev" # to use the conda env to make sure sire works correctly - sourced in each sh script
-# export amber="/home/anna/amber22/amber.sh" # sourced in each script
+# export amber="/usr/local/amber22/amber.sh" # sourced in each script
 # export gromacs="/usr/local/gromacs/bin/GMXRC" # sourced in each script
 # source $BSS
 # source $amber
@@ -49,12 +45,12 @@ chmod u+x run_production_slurm.sh
 
 # Run the runs
 # ligand prep
-# jidlig=$(sbatch --parsable --array=0-$((${#lig_array[@]}-1)) run_ligprep_slurm.sh)
-# echo "ligand prep jobid is $jidlig"
+jidlig=$(sbatch --parsable --array=0-$((${#lig_array[@]}-1)) run_ligprep_slurm.sh)
+echo "ligand prep jobid is $jidlig"
 
 # FEP prep --dependency=afterany:${jidlig}
-# jidfep=$(sbatch  --parsable --array=0-$((${#trans_array[@]}-1)) run_fepprep_slurm.sh)
-# echo "FEP prep jobid is $jidfep"
+jidfep=$(sbatch  --parsable --array=0-$((${#trans_array[@]}-1)) run_fepprep_slurm.sh)
+echo "FEP prep jobid is $jidfep"
 
 # Production runs for the transformation --dependency=afterany:${jidfep}
 for i in "${!trans_array[@]}"; do
