@@ -267,8 +267,8 @@ protocol = BSS.Protocol.Equilibration(
 sys_equil_fin = runProcess(equil4, protocol, pmemd=True)
 
 # finally, save last snapshot of both equilibrated objects.
-#os.system("mkdir -p prep/ligands")
-#os.system("mkdir -p prep/protein")
+os.system("mkdir -p prep/ligands")
+os.system("mkdir -p prep/protein")
 
 print("Saving solvated/equilibrated systems.")
 print("\n Ligand:")
