@@ -1,0 +1,49 @@
+# Analysing data contained in file(s) ['example_output/free/run001/discharge/output/lambda_0.000/simfile.dat', 'example_output/free/run001/discharge/output/lambda_0.143/simfile.dat', 'example_output/free/run001/discharge/output/lambda_0.286/simfile.dat', 'example_output/free/run001/discharge/output/lambda_0.429/simfile.dat', 'example_output/free/run001/discharge/output/lambda_0.571/simfile.dat', 'example_output/free/run001/discharge/output/lambda_0.714/simfile.dat', 'example_output/free/run001/discharge/output/lambda_0.857/simfile.dat', 'example_output/free/run001/discharge/output/lambda_1.000/simfile.dat']
+#Overlap matrix
+0.6274 0.2858 0.0742 0.0112 0.0012 0.0001 0.0000 0.0000
+0.2858 0.3783 0.2393 0.0780 0.0159 0.0023 0.0003 0.0000
+0.0742 0.2393 0.3383 0.2309 0.0893 0.0227 0.0045 0.0007
+0.0112 0.0780 0.2309 0.3153 0.2263 0.0992 0.0313 0.0078
+0.0012 0.0159 0.0893 0.2263 0.2919 0.2211 0.1123 0.0420
+0.0001 0.0023 0.0227 0.0992 0.2211 0.2840 0.2341 0.1365
+0.0000 0.0003 0.0045 0.0313 0.1123 0.2341 0.3150 0.3025
+0.0000 0.0000 0.0007 0.0078 0.0420 0.1365 0.3025 0.5104
+#DG from neighbouring lambda in kcal/mol
+0.0000 0.1430 3.0150 0.0095
+0.1430 0.2860 2.2410 0.0085
+0.2860 0.4290 1.5914 0.0077
+0.4290 0.5710 1.0716 0.0068
+0.5710 0.7140 0.6792 0.0062
+0.7140 0.8570 0.3675 0.0056
+0.8570 1.0000 0.0968 0.0061
+#PMF from MBAR in kcal/mol
+0.0000 0.0000 0.0000
+0.1430 3.0150 0.0095
+0.2860 5.2560 0.0159
+0.4290 6.8475 0.0202
+0.5710 7.9190 0.0232
+0.7140 8.5982 0.0255
+0.8570 8.9657 0.0273
+1.0000 9.0624 0.0291
+#TI average gradients and standard deviation in kcal/mol
+0.0000 24.2652 5.1957
+0.1430 18.1651 5.3295
+0.2860 13.1524 5.1674
+0.4290 9.1028 4.6708
+0.5710 6.1496 4.1875
+0.7140 3.2452 4.2238
+0.8570 1.6517 3.7375
+1.0000 -0.3253 3.7124
+#PMF from TI in kcal/mol
+0.0000 0.0000
+0.1430 3.0338
+0.2860 5.2730
+0.4290 6.8642
+0.5710 7.9471
+0.7140 8.6189
+0.8570 8.9690
+1.0000 9.0638
+#MBAR free energy difference in kcal/mol: 
+9.062438, 0.029058 
+#TI free energy difference in kcal/mol: 
+9.063824  
