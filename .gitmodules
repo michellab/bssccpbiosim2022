@@ -1,0 +1,3 @@
+[submodule "freenrgworkflows"]
+	path = freenrgworkflows
+	url = https://github.com/michellab/freenrgworkflows.git
