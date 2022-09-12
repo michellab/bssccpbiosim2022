@@ -33,6 +33,11 @@ notebooks there. These training materials will teach you more about BioSimSpace,
 
 * [setup_rbfe.ipynb](relative_binding_free_energies/setup_rbfe.ipynb) : This notebook shows how to prepare and deploy a network of relative binding free energy calculations. 
 
-* [analyse_rbfe.ipynb](relative_binding_free_energies/analyse_rbfe.ipynb) : This notebook shows how to analyse a network of relative binding free energies to generate estimates of protein-ligand binding affinities. 
+* [analyse_rbfe.ipynb](relative_binding_free_energies/analysis_rbfe.ipynb) : This notebook shows how to analyse a network of relative binding free energies to generate estimates of protein-ligand binding affinities. 
 
 ### Part 3: Absolute Binding Free Energies with BioSimSpace
+
+* [setup_abfe.ipynb](absolute_binding_free_energies/setup_abfe.ipynb) : This notebook shows how to prepare an absolute binding free energy calculation for a protein-ligand complex using BioSimSpace.
+
+* [analyse_rbfe.ipynb](absolute_binding_free_energies/analyse_abfe.ipynb) :This notebook shows how to analyse an absolute binding free energy calculation of a protein-ligand complex using BioSimSpace.
+
