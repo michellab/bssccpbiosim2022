@@ -132,7 +132,7 @@ class NetworkAnalyser(object):
             warnings.warn('Provided network is disconnected. Doing analysis on subgraph.')
 
         # We only do the analysis for the largest connected set of nodes
-        for node in largest:
+        for node in self._compoundList:
 
             if node not in self._ddG_edges:
                 self._ddG_edges[node] = {}
